@@ -1,4 +1,4 @@
-# amazing-ai-skills
+# amazing-personal-ai-skills
 
 A collection of specialized AI skills designed to simplify your personal life. Each skill is optimized for a specific use case and works seamlessly with leading AI providers like Claude, Perplexity, VS Code, and more.
 
