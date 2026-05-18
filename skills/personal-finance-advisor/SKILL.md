@@ -22,6 +22,7 @@ Listen for these keywords to understand what they need:
 | "What's my financial health?" / "How am I doing?" / "Rate my finances" | Health diagnosis | `financial-health-diagnosis` |
 | "Where is my money going?" / "Why am I not saving?" / "Identify my spending leaks" | Behavioral audit | `behavioral-spending-audit` |
 | "Is my portfolio allocation good?" / "Should I buy this fund?" / "Am I investing well?" | Investment strategy | `investment-audit-india` |
+| "How do I save taxes?" / "Help with ITR" / "Should I invest in ELSS/PPF/NPS?" / "Reduce my tax burden" | Tax optimization | `tax-optimization-india` |
 | "What if I lose my job?" / "Can I survive a market crash?" / "Emergency planning" | Scenario testing | `stress-test-scenarios` |
 | "What should I do?" / "Create a plan for me" / "30/90/12-month roadmap" | Action planning | `wealth-action-planning` |
 | "Should I invest globally?" / "US stocks, crypto?" / "International diversification" | Global strategy | `global-investing-strategy` |
@@ -151,22 +152,27 @@ Once I have these numbers, I'll know exactly where you stand and what to focus o
 **Outputs**: Allocation assessment, concentration risk analysis, tax efficiency audit, compounding optimization, rebalancing recommendations
 **Depth**: Technical. Tax-aware. Indian-context (ELSS, PPF, NPS, TCS, LTCG).
 
-### 4. `stress-test-scenarios`
+### 4. `tax-optimization-india`
+**When to invoke**: User asks "How do I save taxes?" / "Help me file ITR" / "Should I invest in ELSS/PPF/NPS?" / "What's my tax liability?" / "Create a tax plan"
+**Outputs**: Tax liability calculation, deduction optimizer (80C, 80D, 80CCD prioritization), tax-saving investment roadmap, income structuring opportunities (HRA, LTA), ITR filing checklist, deadline calendar
+**Depth**: Comprehensive. Actionable. India-specific (ITR forms, Section 80 deductions, ELSS/PPF/NPS, HRA/LTA, capital gains). Tax-law current.
+
+### 5. `stress-test-scenarios`
 **When to invoke**: User says "What if I lose my job?" / "Can I survive a crash?" / "Emergency planning" / "How resilient am I?"
 **Outputs**: Scenario 1 (30% income drop): survival months, actions needed. Scenario 2 (25% market correction): portfolio impact, recovery timeline. Scenario 3 (medical emergency): survivability. Risk levels for each.
 **Depth**: Stress-testing. Quantified resilience. Clear action thresholds.
 
-### 5. `wealth-action-planning`
+### 6. `wealth-action-planning`
 **When to invoke**: User says "Create a plan" / "30/90/12-month roadmap" / "What should I do first?"
 **Outputs**: 3 brutal truths, 3 strategic shifts, 1 bold move, 30-day plan, 90-day plan, 12-month projection
 **Depth**: Actionable. Time-bound. Specific $ targets & milestones.
 
-### 6. `global-investing-strategy`
+### 7. `global-investing-strategy`
 **When to invoke**: User asks "Should I invest globally?" / "US stocks, crypto?" / "International diversification"
 **Outputs**: Readiness check (prerequisites), when to start, how much to allocate, which vehicles, tax implications, recommended sequence
 **Depth**: Practical. Tax-aware. Risk-contextualized.
 
-### 7. `income-diversification-strategy`
+### 8. `income-diversification-strategy`
 **When to invoke**: User says "How do I earn more?" / "Side gigs?" / "Multiple income streams" / "Career acceleration"
 **Outputs**: Which income streams are realistic for you, sequencing (which first?), effort vs. return analysis, 12/24-month income projection
 **Depth**: Pragmatic. Effort-realistic. Prioritized.
@@ -179,6 +185,7 @@ Each sub-skill should output **concisely**:
 - **financial-health-diagnosis**: 1 screen (health score + 5 key metrics + 1 paragraph reasoning)
 - **behavioral-spending-audit**: 3 key leaks, each with 2–3 sentence observation + action
 - **investment-audit-india**: 4–5 issues flagged, each with 1–2 sentence context + recommendation
+- **tax-optimization-india**: 1-page tax plan + 2-page ITR checklist + deadline calendar (structured, not prose)
 - **stress-test-scenarios**: 3 scenarios, each with 1–2 sentence summary + survival timeline
 - **wealth-action-planning**: 3 truths (1 sentence each), 3 shifts (title + 2–3 bullets), 1 bold move (1–2 sentences), then 30/90/12 plans
 - **global-investing-strategy**: Prerequisites checklist, readiness verdict (yes/no/maybe + when), vehicle table, tax summary
